@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 5%;
+    justify-content: center;
+    align-items:flex-start;
+}
+.conteiner_left{
+    min-width: 300px;
+    max-width: 400px;
+    width: 40%;
+}
+.conteiner_right{
+    background-color: #EFEFE7;
+    min-width: 300px;
+    max-width: 400px;
+    width: 40%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+}
+form input{
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+form label{
+    color: gray;
+}
+#country{
+    border-radius: 5px;
+    height: 30px;
+    width: 120%;
+    border: 1px solid grey;
+}
+#postCode{
+    width: 100%;
+}
+.country-postcode{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.country, .postcode{
+    gap: 0.5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    font-size: 0.8rem;
+}
+#checkbox{
+    width: 15px;
+    margin-right: 10px;
+    height: 10px;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    height: 150px;
+}
+
+.product .img img{
+    width:130px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.product_detail{
+
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: flex-start;
+}
+.product_basket-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 150px;
+    padding:0.1rem;
+}
+
+.btn_remove{
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 20px;
+}
+
+.product_name a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.explain{
+    margin-top: 2rem;
+  }
+.div{
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid gray;
+}
+#sayi {
+    color: grey;
+    background-color: #EFEFE7;
+    border: none;
+    text-align: center;
+  }
+  
+  .negativeButton {
+    width: 20px;
+  }
+  
+  .plusButton {
+    width: 20px;
+  }
+  
+  .product_basket-num {
+    margin-top: 10px;
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+  }
+.btn_continue{
+    width: 100px;
+    margin: auto;
+}
+  .btn_continue input{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 1rem 0.8rem;
+  }
+
+ 
