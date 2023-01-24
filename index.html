@@ -2,201 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <!-- <h1>Checkout</h1>
-    <div class="conteiner">
-      <div class="conteiner_left">
-        <form action="">
-          <h2>Contact information</h2>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter Your email..."
-          />
-          <label for="tel">Phone</label>
-          <input
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder=" Enter Your Phone..."
-          />
+    <h1 id="checkout-title">Checkout Page</h1>
+    <main>
+      <div id="products-preview">
+        <div id="product-painel">
+          <div class="products">
+            <div class="product">
+              <img src="img/photo1.png" alt="" />
+              <div class="product-info">
+                <h2>Vintage Backbag</h2>
+                <div class="product-price">
+                  <p>
+                    <strong>25.98</strong>
+                    <span class="line-through">34.99</span>
+                  </p>
+                </div>
+                <div class="quantity-controller">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="quantity">1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product">Remove</button>
+                </div>
+                <div class="product-line-price">25.98</div>
+              </div>
+            </div>
 
-          <h2>Shipping address</h2>
-          <label for="fullname">Full Name</label>
-          <input
-            type="text"
-            name="fullname"
-            id="fullname"
-            placeholder="Enter Your Full Name..."
-          />
-          <label for="adress">Address</label>
-          <input
-            type="text"
-            name="adress"
-            id="adress"
-            placeholder="Enter Your Adress..."
-          />
-          <label for="city">City</label>
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder="Enter Your City..."
-          />
-          <div class="country-postcode">
-            <div class="country">
-              <label for="country">Country</label>
-              <select name="country" id="country">
-                <option value="Turkiye" disabled selected>Turkiye</option>
-                <option value="Germany">Germany</option>
-                <option value="UK">UK</option>
-                <option value="USA">USA</option>
-              </select>
+            <div class="product">
+              <img src="img/photo2.png" alt="" />
+              <div class="product-info">
+                <h2>Levi Shoes</h2>
+                <div class="product-price">
+                  <p>
+                    <strong>45.99</strong>
+                    <span class="line-through">54.99</span>
+                  </p>
+                </div>
+                <div class="quantity-controller">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="quantity">1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product">Remove</button>
+                </div>
+                <div class="product-line-price">45.99</div>
+              </div>
             </div>
-            <div class="postcode">
-              <label for="postCode">Post Code</label>
-              <input
-                type="text"
-                name="postCode"
-                id="postCode"
-                placeholder="Enter Your Postal Code..."
-              />
+
+            <div class="product">
+              <img src="img/photo3.jpg" alt="" />
+              <div class="product-info">
+                <h2>Antique Clock</h2>
+                <div class="product-price">
+                  <p>
+                    <strong>74.99</strong>
+                    <span class="line-through">94.99</span>
+                  </p>
+                </div>
+                <div class="quantity-controller">
+                  <i class="fa-solid fa-minus"></i>
+                  <p class="quantity">1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product">Remove</button>
+                </div>
+                <div class="product-line-price">74.99</div>
+              </div>
             </div>
           </div>
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox" id="checkbox" />
-            <label for="">See this information next time</label>
+          <div class="buy-detail" id="cart-subtotal">
+            <p>Subtotal</p>
+            <p>0</p>
           </div>
-        </form>
-      </div> -->
-      <div class="conteiner_right">
-        <div class="product1 product">
-          <div class="img">
-            <img src="./images/canta.png" alt="" />
+          <div class="buy-detail" id="cart-tax">
+            <p>Tax(%18)</p>
+            <p>0</p>
           </div>
-          <div class="product_detail">
-            <p class="product_name"><a href="#">Vintage Backbag</a></p>
-            <p class="product_currentPrice">
-              <span>$</span>
-              <!-- <strong class="product_currentPrice--"> 25.98</strong> -->
-              <span class="product_currentPrice0"> 25.98 </span>
-              <del>
-                <span>$</span>
-                <span>34.99</span>
-              </del>
-            </p>
-            <div class="product_basket-num">
-              <input type="button" value="-" class="negativeButton" />
-              <p class="urunMiktari0">1</p>
-              <input type="button" value="+" class="plusButton" />
-            </div>
-            <div class="remove">
-              <button class="btn_remove">Remove</button>
-            </div>
-            <p>
-              Product Total :$
-              <span class="product_totalPrice0"></span>
-            </p>
+          <div class="buy-detail" id="cart-shipping">
+            <p>Shipping</p>
+            <p>0</p>
           </div>
-        </div>
-        <div class="product2 product">
-          <div class="img">
-            <img src="./images/ayakkabı.png" alt="" />
-          </div>
-          <div class="product_detail">
-            <p class="product_name"><a href="">Levi Shoes</a></p>
-            <p class="product_currentPrice">
-              <span>$</span>
-              <span class="product_currentPrice1">45.99</span>
-              <del>
-                <span>$</span>
-                <span>54.99</span>
-              </del>
-            </p>
-            <div class="product_basket-num">
-              <input type="button" value="-" class="negativeButton" />
-              <p class="urunMiktari1">1</p>
-              <input type="button" value="+" class="plusButton" />
-            </div>
-            <div class="remove">
-              <button class="btn_remove">Remove</button>
-            </div>
-            <p>
-              Product Total :$
-              <span class="product_totalPrice1"></span>
-            </p>
-          </div>
-        </div>
-        <div class="product3 product">
-          <div class="img">
-            <img src="./images/saat.jpg" alt="" />
-          </div>
-          <div class="product_detail">
-            <p class="product_name"><a href="">Antique Clock</a></p>
-            <p class="product_currentPrice">
-              <span>$</span>
-              <span class="product_currentPrice2">74.99</span>
-              <del>
-                <span>$</span>
-                <span>94.99</span>
-              </del>
-            </p>
-            <div class="product_basket-num">
-              <input type="button" value="-" class="negativeButton" />
-              <p class="urunMiktari2">1</p>
-              <input type="button" value="+" class="plusButton" />
-            </div>
-            <div class="remove">
-              <button class="btn_remove">Remove</button>
-            </div>
-            <p>
-              Product Total :$
-              <span class="product_totalPrice2"></span>
-            </p>
-          </div>
-        </div>
-        <div class="explain">
-          <div class="div1 div">
-            <p class="subtotal pEl">Subtotal</p>
-            <p>
-              <span>$</span>
-              <span class="subtotal_price"></span>
-            </p>
-          </div>
-          <div class="div2 div">
-            <p class="tax pEl">Tax(%18)</p>
-            <p>
-              <span>$</span>
-              <span class="tax_price"></span>
-            </p>
-          </div>
-          <div class="div3 div">
-            <p class="shipping pEl">Shipping</p>
-            <p>
-              <span>$</span>
-              <span class="shipping_price"></span>
-            </p>
-          </div>
-          <div class="div4 div">
-            <p class="TotalPrice pEl">Total</p>
-            <p>
-              <span>$</span>
-              <span class="total_price"></span>
-            </p>
+          <div class="buy-detail" id="cart-total">
+            <p>Total</p>
+            <p>0</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="btn_continue">
-      <input type="button" value="Continue" />
-    </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
