@@ -4,6 +4,8 @@
 }
 body {
   background-image: url(./img/food-3913025_1920.jpg);
+  background-repeat: no-repeat;
+
 }
 main {
   position: relative;
@@ -19,6 +21,8 @@ main {
   font-family: Mon, Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 15px 0;
+  color: rgb(238, 94, 11);
+  box-shadow: 3px 3px 3px;
 }
 
 main form {
@@ -367,7 +371,7 @@ i {
     position: absolute;
     width: 100%;
     border-radius: 10px;
-    background-color: #eeeeee;
+    background-color: #df8919;
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -384,11 +388,15 @@ i {
     width: 30%;
     border-radius: 10px;
     margin-right: 20px;
+    object-fit: cover;
   }
 
   .product-info {
     font-family: Mon, Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: rgba(36, 32, 32, 0.6);
+    border-radius: 10px;
+    padding: 10px;
   }
 
   .product-info h2 {
@@ -520,7 +528,7 @@ i {
   border: 0;
   padding: 4px 8px;
   margin: 5px;
-  background-color: #c66;
+  background-color: #E05E0B;
   color: #fff;
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
   font-size: 12px;
