@@ -130,7 +130,7 @@ main form {
   position: absolute;
   width: 100%;
   border-radius: 10px;
-  background-color: #eeeeee;
+  background-color: #dbbd92;
   padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -152,6 +152,9 @@ main form {
 .product-info {
   font-family: Mon, Arial, Helvetica, sans-serif;
   width: 100%;
+  background-color: rgba(216, 210, 210, 0.4);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .product-info h2 {
@@ -371,7 +374,7 @@ i {
     position: absolute;
     width: 100%;
     border-radius: 10px;
-    background-color: #df8919;
+    background-color: #dbbd92;
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +397,7 @@ i {
   .product-info {
     font-family: Mon, Arial, Helvetica, sans-serif;
     width: 100%;
-    background-color: rgba(36, 32, 32, 0.6);
+    background-color: rgba(216, 210, 210, 0.3);
     border-radius: 10px;
     padding: 10px;
   }
